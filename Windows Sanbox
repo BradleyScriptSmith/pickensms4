@@ -1,0 +1,8 @@
+REM Install Windows Sandbox 
+DISM /Online /Enable-Feature /FeatureName:"Containers-DisposableClientVM" /All /NoRestart
+echo Windows Sandbox installed successfully!
+
+timeout /t 15 /nobreak
+
+REM Restart the machine
+shutdown /r /f /t 0
