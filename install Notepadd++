@@ -1,4 +1,0 @@
-REM install Notepadd++
-powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -Command "$url='https://aps4-my.sharepoint.com/:u:/g/personal/bjvanlandingham_aurorak12_org/EWjGja6wyvZFlfn6BUqWkFMBCWHcax3XDgUu1QrRsHcGYA?e=ypY0vt&download=1'; $dst='C:\IT Department\Notepad++.zip'; if(-Not(Test-Path 'C:\IT Department')){ New-Item -ItemType Directory -Path 'C:\IT Department' -Force }; Invoke-WebRequest -Uri $url -OutFile $dst; Write-Host 'Downloaded →' $dst"
-powershell -NoProfile -ExecutionPolicy Bypass -Command "if(-Not(Test-Path 'C:\IT Department')){New-Item -ItemType Directory -Path 'C:\IT Department'}; Expand-Archive -LiteralPath 'C:\IT Department\Notepad++.zip' -DestinationPath 'C:\IT Department' -Force"
-"C:\IT Department\Notepad++\npp.8.8.Installer.x64.exe" /S && echo Notepad++ installed successfully. || echo ERROR %ERRORLEVEL% – check log.
