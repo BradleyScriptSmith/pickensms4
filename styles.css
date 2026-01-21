@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 0; }
+.header { display: flex; align-items: center; gap: 16px; padding: 16px; border-bottom: 1px solid #ddd; }
+.logo { height: 48px; }
+.nav a { margin-right: 12px; text-decoration: none; }
+.main { padding: 24px; }
