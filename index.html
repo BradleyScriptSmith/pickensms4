@@ -3,23 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pickensms4</title>
+  <title>PickensMS4</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- cache-bust so changes show up right away -->
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 
 <body>
-  <header class="header">
-    <img src="images/logo.png" alt="Logo" class="logo">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="PickensMS4 logo">
+        <div class="brand-text">
+          <div class="brand-name">PickensMS4</div>
+          <div class="brand-sub">Tech hub • scripts • docs • help</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link is-active" href="index.html">Home</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <!-- Optional: link to your community repo later -->
+        <!-- <a class="nav-link" href="https://github.com/BradleyScriptSmith/bvan-tech-community" target="_blank" rel="noreferrer">Community</a> -->
+      </nav>
+    </div>
   </header>
 
-  <main class="main">
-    <h1>PickensMS4</h1>
-    <p>Welcome 👋</p>
-  </main>
-</body>
-</html>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>PickensMS4 Tech Portal</h1>
+          <p class="lead">
+            A simple place for tools, troubleshooting notes, and projects.
+            (We can expand this into a full portfolio style site whenever you want.)
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="contact.html">Get in touch</a>
+            <a class="btn" href="#sections">Explore</a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="pill">GitHub Pages ✅</span>
+            <span class="pill">Fast + clean</span>
+            <span class="pill">Easy to grow</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-title">Quick Links</div>
+          <ul class="quick-links">
+            <li><a href="#sections">Sections</a></li>
+            <li><a href="#updates">Recent updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hint">
+            Tip: We can add “Projects”, “Scripts”, and “Docs” pages next.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sections" class="section">
+      <div class="container">
+        <h2>What’s here</h2>
+        <p class="muted">These are placeholders — we’ll replace them with real pages as you add content.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Scripts</h3>
+            <p>PowerShell, batch, automation helpers, and quick fixes.</p>
+            <a class="card-link" href="#">Coming soon →</a>
+          </article>
